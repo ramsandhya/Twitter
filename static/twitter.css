@@ -1,0 +1,115 @@
+body {
+  background: #f5f8fa;
+  padding-top: 125px;
+}
+
+.header {
+  background: #1DA1F2;
+  text-align: center;
+  color: white;
+  height: 200px;
+}
+
+.well {
+  background-color: #fff;
+}
+
+.follow-button {
+  margin: 15px 0;
+}
+
+nav.navbar{
+  background-color:skyblue;
+  min-height: 120px;
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav.navbar.shrink {
+  min-height: 55px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.userinfo {
+  display: inline;
+  vertical-align: top;
+  margin-left: 6px;
+}
+
+.tweetcontent {
+  margin-left: 60px;
+}
+
+.bold {
+  font-weight: 700;
+  color: black;
+  vertical-align: top;
+}
+
+.greyed {
+  color: grey;
+  vertical-align: top;
+}
+
+.userinfo a {
+  text-decoration: none;
+}
+
+.title {
+  display: inline;
+}
+
+.nav-pills {
+  float: right;
+
+}
+
+.navbar .container {
+  padding-top: 5px;
+}
+
+.navbutton {
+  background-color: lightgreen;
+  width: 100px;
+  color: maroon;
+  margin-right: 20px;
+}
+
+.tweetpic {
+  max-width: 100%;
+}
+
+.tweetinput {
+  padding: 10px;
+}
+
+.action {
+  color: #AAB8C2;
+  font-size: 1.5em;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.action:hover {
+  color: red;
+}
+
+.liked {
+  color: red;
+}
+
+.retweet {
+  color: #50D9A3;
+}
+
+.logo {
+  max-width: 70px;
+  display: inline;
+}

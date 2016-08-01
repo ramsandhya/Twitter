@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block body %}
+<form class="" action="/addTweet" method="post">
+  <input type="text" name="tweet_name" value="" placeholder = "Add tweet">
+  <button type="submit" name="Post">Post</button>
+  <ul>
+    {% for tweet in tweets %}
+    <li><a href="/user/{{tweet.name}}"> {{tweet.name}}</a>: {{tweet.message}}</li>
+    {% endfor %}
+  </ul>
+</form>
+{% endblock %}

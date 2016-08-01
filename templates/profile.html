@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <p>
+
+  </p>
+  <ul>
+    {% for tweet in tweets %}
+      <li><bold>{{tweet.name}}</bold>:  {{tweet.message}}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

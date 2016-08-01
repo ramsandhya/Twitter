@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/static/twitter.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <h1 class="title">{{ title }}</h1>
+        {% if session['name'] %}
+        <p>Welcome, {{session['name']}}</p>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="/" class="btn btn-default navbutton">Home</a></li>
+          <li role="presentation"><a href="/timeline" class="btn btn-default navbutton">Timeline</a></li>
+          <li role="presentation"><a href="/profile/{{session['user']}}" class="btn btn-default navbutton">Profile</a></li>
+          <li role="presentation"><a href="/logout" class="btn btn-default navbutton">Logout</a></li>
+          {% else %}
+          <li role="presentation"><a href="/login" class="btn btn-default navbutton">Login</a></li>
+          <li role="presentation"><a href="/signup" class="btn btn-default navbutton">Signup</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+
+    {% block body %} {% endblock %}
+  </body>
+</html>
